@@ -49,3 +49,44 @@ const App = () => {
 
 - Default export: Khi import thì có thể đổi tên của component. Trong 1 file thì chỉ có thể export default 1 component duy nhất
 - Named export: Có thể export nhiều trong 1 file. Cũng có thể đổi tên khi import với `as`
+
+# JSX
+
+- Khi code Component trong React và sử dụng `return` thì phải có ít nhất 1 thẻ cha bọc lại
+- Nếu không muốn dùng thêm thẻ để bọc lại thì có thể dùng `<></>` hoặc `Fragment`
+- Khi sử dụng JSX thì các thuộc tính sẽ sử dụng theo cấu trúc là camelCase. Đối với 1 từ thì viết bình thường ví dụ: `id` `type`. Đối với 2 từ trở lên thì sẽ là camelCase. Ví dụ: `className` `onChange` `onClick`
+- Có 1 số thuộc tính đặc biệt thì vẫn viết như bình thường. Ví dụ `aria-label` chứ không cần phải viết là 🛑 arialLabel
+- Ví dụ thuộc tính trong svg là stroke-width(HTML) -> `strokeWidth`
+- Tất cả thẻ trong JSX phải đóng. Ví dụ <img> -> <img/> <div/> <div>react</div>
+- Khi sử dụng JSX trong React nếu viết sai thì cũng sẽ được IDE hoặc Code Editor gợi ý để chỉnh sửa
+
+# JSX {}
+
+- Nếu giá trị là chuỗi thì truyền vào chuỗi nháy đôi như bình thường.
+- Nếu giá trị không phải chuỗi thì dùng dấu `{value}`
+- Value có thể là object({}), array([]), hoặc là biến bất kỳ, số, boolean, function
+- Khi dùng style inline trong JSX thì các thuộc tính cũng phải viết theo _camelCase_.
+- Nếu giá trị là `boolean` thì có 2 trường hợp:
+- Trường hợp giá trị là `false` thì truyền vào `false`. Ví dụ `isActive={false}`
+- Trường hợp giá trị là `true` thì các bạn có thể viết rút gọn như sau `isActive`
+- Nếu function có tham số(parameters) thì sẽ viết dạng
+
+```js
+{
+  () => handleClickImage();
+}
+```
+
+- Nếu function không có tham số thì có thể viết rút gọn
+
+```js
+{
+  handleClickImage;
+}
+```
+
+# Props
+
+# Conditional rendering
+
+# Rendering list

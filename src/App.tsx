@@ -1,19 +1,18 @@
-import './App.css';
-import { Banner, Contact } from './components';
-import { Button, Profile, Text as TextField } from './profile';
+import { Avatar } from './components/avatar';
 
 const App = () => {
-  const Text = 'hello world';
+  const myName = 'evondev';
+  const handleGetFullYear = () => {
+    return new Date().getFullYear();
+  };
+  const age = 30;
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-      <Profile></Profile>
-      <TextField />
-      <Button></Button>
-      <Banner />
-      <Contact />
-    </div>
+    <>
+      <Avatar />
+      <p>My name is {myName}</p>
+      <p>This year is: {handleGetFullYear()} </p>
+      <p>I am still {age > 30 ? 'old' : 'young'}</p>
+    </>
   );
 };
 
