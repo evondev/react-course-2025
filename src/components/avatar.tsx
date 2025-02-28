@@ -1,6 +1,13 @@
-export function Avatar() {
-  const imageURL =
-    "https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+interface AvatarProps {
+  imageURL: string;
+  size: number;
+}
+
+export function Avatar(props: AvatarProps) {
+  // const imageURL = props.imageURL;
+  // const size = props.size;
+  // destructring
+  const { imageURL, size } = props;
 
   const handleClickImage = () => {
     console.log("click me!");
@@ -11,8 +18,8 @@ export function Avatar() {
     <img
       src={imageURL}
       style={{
-        width: "120px",
-        height: "120px",
+        width: size,
+        height: size,
         borderRadius: "100px",
         objectFit: "cover",
       }}

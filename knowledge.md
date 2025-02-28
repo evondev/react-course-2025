@@ -87,6 +87,20 @@ const App = () => {
 
 # Props
 
+- Props là 1 object
+- Khi khai báo props thì nên định nghĩa type cho những props đó. Cách đặt tên: Component+Props ví dụ `AvatarProps` `UserProfileProps` `ModalDeleteProps`
+- Đặt tên props hiệu quả: đặt dễ hiểu, tuân thủ camelCase, nếu props truyền vào là function thì nên bắt đầu với từ `on` + danh từ + sự kiện. Ví dụ `onImageClick` `onModalRemove` `onInputTyping`
+- Những functions sử dụng bên trong nội bộ component đó thì nên bắt đầu với từ `handle` + danh từ + sự kiện. Ví dụ `handleInputChange` `handleContainerClick`
+- Component này chưa có props nào truyền vào ví dụ `<Avatar />`
+- Những cách sử dụng props
+
+```js
+const imageURL = props.imageURL;
+const size = props.size;
+// destructring
+const { imageURL, size } = props;
+```
+
 # Conditional rendering
 
 # Rendering list
