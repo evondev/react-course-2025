@@ -93,12 +93,15 @@ const App = () => {
 - Những functions sử dụng bên trong nội bộ component đó thì nên bắt đầu với từ `handle` + danh từ + sự kiện. Ví dụ `handleInputChange` `handleContainerClick`
 - Component này chưa có props nào truyền vào ví dụ `<Avatar />`
 - Những cách sử dụng props
+- Default values nghĩa là những giá trị mặc định nếu chúng ta không truyền giá trị vào thì nó sẽ lấy giá trị mặc định
+- Sau này khi đi làm nếu thêm 1 props cho component nào đó mà component đó đang sử dụng ở rất nhiều chỗ thì phải lưu ý là props đó có bắt buộc cho tất cả không ? Nếu có thì phải đi sửa cho tất cả những chỗ đang dùng. Nếu không thì nên để props đó là optional.
 
 ```js
 const imageURL = props.imageURL;
 const size = props.size;
 // destructring
 const { imageURL, size } = props;
+export function Avatar({ imageURL, size }: AvatarProps) {}
 ```
 
 # Conditional rendering
