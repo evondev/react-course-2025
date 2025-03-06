@@ -95,6 +95,7 @@ const App = () => {
 - Những cách sử dụng props
 - Default values nghĩa là những giá trị mặc định nếu chúng ta không truyền giá trị vào thì nó sẽ lấy giá trị mặc định
 - Sau này khi đi làm nếu thêm 1 props cho component nào đó mà component đó đang sử dụng ở rất nhiều chỗ thì phải lưu ý là props đó có bắt buộc cho tất cả không ? Nếu có thì phải đi sửa cho tất cả những chỗ đang dùng. Nếu không thì nên để props đó là optional.
+- Đối với những props là `boolean` thì nên bắt đầu với các từ như: `is, can, could, should, will, have, has...`
 
 ```js
 const imageURL = props.imageURL;
@@ -105,5 +106,10 @@ export function Avatar({ imageURL, size }: AvatarProps) {}
 ```
 
 # Conditional rendering
+
+- Sử dụng điều kiện để hiển thị UI: `if/else, ?:, &&, ??`
+- _Cách 1_: Sử dụng if/else
+- _Cách 2_: Sử dụng ternary operator ?:
+- _Cách 3_: Sử dụng toán tử &&
 
 # Rendering list
