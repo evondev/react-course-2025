@@ -1,4 +1,4 @@
-import Todo from "./components/todo";
+import UserList from "./user-list";
 
 const App = () => {
   return (
@@ -15,9 +15,11 @@ const App = () => {
         </div>
       </Avatar>
       <Avatar imageURL="/public/image2.jpg" size={200} /> */}
-      <Todo title="Complete homework" isCompleted count={0} />
+      {/* <Todo title="Complete homework" isCompleted count={0} />
       <Todo title="Playing badminton" count={2} />
-      <Todo title="Resolve leetcode" count={3} time="2024" />
+      <Todo title="Resolve leetcode" count={3} time="2024" /> */}
+      {/* <List /> */}
+      <UserList />
     </div>
   );
 };

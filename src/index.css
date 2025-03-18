@@ -36,3 +36,14 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 20px;
 }
+.item {
+  margin-bottom: 12px;
+}
+.item.red {
+  color: red;
+}
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 12px;
+}

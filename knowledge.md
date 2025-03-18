@@ -113,3 +113,8 @@ export function Avatar({ imageURL, size }: AvatarProps) {}
 - _Cách 3_: Sử dụng toán tử &&
 
 # Rendering list
+
+- Khi mà data liên quan tới nhau và có từ 2 phần tử trở lên thì nên dùng _rendering list_
+- Khi sử dụng _rendering list_ thì key là bắt buộc. `Key` nên là 1 giá trị **unique** ví dụ như id từ data trả ra
+- Khi mà muốn xử lý nhiều logic thì nên sử dụng với dấu ngoặc nhọn và dùng từ khóa return. Ngược lại thì chỉ cần trả về inline
+- Để xử lý dữ liệu thì có thể dùng các phương thức cho mảng trong Javascript như: map, filter, reduce, some, every, find, findIndex...
