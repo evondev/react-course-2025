@@ -118,3 +118,37 @@ export function Avatar({ imageURL, size }: AvatarProps) {}
 - Khi sử dụng _rendering list_ thì key là bắt buộc. `Key` nên là 1 giá trị **unique** ví dụ như id từ data trả ra
 - Khi mà muốn xử lý nhiều logic thì nên sử dụng với dấu ngoặc nhọn và dùng từ khóa return. Ngược lại thì chỉ cần trả về inline
 - Để xử lý dữ liệu thì có thể dùng các phương thức cho mảng trong Javascript như: map, filter, reduce, some, every, find, findIndex...
+
+# Event handler
+
+- Defined
+- Naming convention
+- Notice
+- Read from props
+- Passing event handler as props
+- Naming event handler props
+- Event propagation
+- Stopping propagation
+- Preventing default behavior
+
+# State
+
+- Definition
+- Regular variable
+- `useState` hook
+- Naming convention
+- Rules of hooks
+- State variable / state setter
+- Multiple state
+- Isolated state
+- Deep dive: How React knows which state to update
+
+# Render
+
+## Trigger
+
+## Rendering
+
+## Commit
+
+-

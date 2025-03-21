@@ -1,4 +1,4 @@
-# Phase 01
+# Phase 01: Components
 
 - Components
 - Import export
@@ -9,6 +9,7 @@
 - Rendering list
 - Exercises
 
-# Phase 02
+# Phase 02: Interactivity
 
 - Events
+- State
