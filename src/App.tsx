@@ -1,4 +1,4 @@
-import UserList from "./user-list";
+import Profile from "./exercises/phase-01/solutions/props-02-solution";
 
 const App = () => {
   return (
@@ -19,7 +19,9 @@ const App = () => {
       <Todo title="Playing badminton" count={2} />
       <Todo title="Resolve leetcode" count={3} time="2024" /> */}
       {/* <List /> */}
-      <UserList />
+      {/* <UserList /> */}
+      {/* <TodoList /> */}
+      <Profile />
     </div>
   );
 };
