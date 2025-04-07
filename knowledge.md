@@ -151,10 +151,10 @@ export function Avatar({ imageURL, size }: AvatarProps) {}
 
 # State
 
-- Definition
-- Regular variable
+- Biến cục bộ(local variables) không tồn tại giữa các lần re-renders. Khi mà thay đổi biến cục bộ sẽ không làm cho React re-renders.
+- Định nghĩa
 - `useState` hook
-- Naming convention
+- Naming convention: [something, setSomething], [a, b]
 - Rules of hooks
 - State variable / state setter
 - Multiple state

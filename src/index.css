@@ -4,3 +4,9 @@
 @theme {
   --default-font-family: "Poppins", sans-serif;
 }
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
