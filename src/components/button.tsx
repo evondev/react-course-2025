@@ -8,8 +8,11 @@ export default function Button({ message, onClick }: ButtonProps) {
   // Function expression
   // const handleButtonClick = () => {}
   // Function declaration
-  function handleButtonClick() {
+  function handleButtonClick(
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) {
+    event.stopPropagation();
     onClick(message);
   }
-  return <button onClick={handleButtonClick}>Button</button>;
+  return <button onClick={(event) => handleButtonClick(event)}>Button</button>;
 }
