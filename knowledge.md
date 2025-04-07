@@ -145,6 +145,10 @@ export function Avatar({ imageURL, size }: AvatarProps) {}
 - Stopping propagation
 - Preventing default behavior
 
+# Styling
+
+- TailwindCSS
+
 # State
 
 - Definition
@@ -155,7 +159,6 @@ export function Avatar({ imageURL, size }: AvatarProps) {}
 - State variable / state setter
 - Multiple state
 - Isolated state
-- Deep dive: How React knows which state to update
 
 # Render
 
@@ -166,3 +169,7 @@ export function Avatar({ imageURL, size }: AvatarProps) {}
 ## Commit
 
 -
+
+# Advanced
+
+- Deep dive: How React knows which state to update
