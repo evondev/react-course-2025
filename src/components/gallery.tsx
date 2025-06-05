@@ -28,6 +28,7 @@ const data = [
 
 export default function Gallery(_props: GalleryProps) {
   const [index, setIndex] = useState(0);
+  console.log("Gallery re-rendering");
 
   const sliderItem = data[index];
 
@@ -61,6 +62,7 @@ export default function Gallery(_props: GalleryProps) {
       >
         Next
       </button>
+      {/* <Image/> -> <Photo/> -> <User/> */}
     </div>
   );
 }
