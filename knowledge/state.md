@@ -62,4 +62,14 @@ setCounter((previousCounter) => previousCounter + 1);
 
 # State object
 
+- Cách cập nhật object state trong React
+- Cách sao chép các thuộc tính trong object
+- Cách cập nhật state object trong form với dynamic name
+- Cách cập nhật với object lồng nhau
+- Tìm hiểu **Immer**
+
 # State array
+
+# React reconciliation
+
+# Manage state

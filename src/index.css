@@ -6,6 +6,9 @@
 }
 
 @layer base {
+  body {
+    @apply bg-gray-950 text-white;
+  }
   button {
     @apply cursor-pointer;
   }
