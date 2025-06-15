@@ -1,11 +1,11 @@
-import StateForm from "./components/state/state-form";
+import StateFormV2 from "./components/state/state-form-v2";
 
 export interface AppProps {}
 
 export default function App(_props: AppProps) {
   return (
     <div>
-      <StateForm />
+      <StateFormV2 />
     </div>
   );
 }
